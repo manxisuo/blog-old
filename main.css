@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -11,8 +11,6 @@ p {margin: 1em 0;}
     font-size: 110%;
     text-align: justify;
     line-height: 1.5em;
-    font-size: 110%;
-    text-align: justify;
     width: 42em;
     margin: 3em auto 2em auto;
     line-height: 1.5em;

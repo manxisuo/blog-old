@@ -349,7 +349,7 @@ function registerKeydownEvent(){
 					console.log(e.which);
 			}
 		}
-	}).focus();
+	});
     
     $('.board').bind('dblclick', function(e){
         e.preventDefault();

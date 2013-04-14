@@ -7,6 +7,12 @@ h1 {}
 h2 {}
 p {margin: 1em 0;}
 
+.site {
+    font-size: 110%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
 .title {
     color: #a00;
     font-weight: bold;

@@ -33,8 +33,8 @@ div3.addEventListener('click', function(){
     console.log('div3: bubble');
 }, false);
 </div>
-<p>
 <pre>
+<p>
 在div3上点击时输出：
     div1: capture
     div2: capture
@@ -52,8 +52,8 @@ div3.addEventListener('click', function(){
 在div1上点击时输出：
     div1: capture
     div1: bubble
-</pre>
 </p>
+</pre>
 <h2>阻止冒泡的方法</h2>
 <p>使用事件对象的 Event.prototype.stopPropagation方法</p>
 <p>继续上面的例子，执行下面脚本</p>
@@ -62,13 +62,13 @@ div3.addEventListener('click', function(e){
     e.stopPropagation();  
 }, false); 
 </div>
-<p>
 <pre>
+<p>
 然后再次点击div3，输出：
     div1: capture
     div2: capture
     div3: capture
     div3: bubble
 此时，div3的click事件不会再冒泡到它的父元素了。
-</pre>
 </p>
+</pre>

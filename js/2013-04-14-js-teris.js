@@ -1,5 +1,5 @@
 var timer = -1;
-var KEY_UP = 38, KEY_DOWN = 40, KEY_LEFT = 37, KEY_RIGHT = 39, KEY_SPACE = 32;
+var KEY_UP = 38, KEY_DOWN = 40, KEY_LEFT = 37, KEY_RIGHT = 39, KEY_SPACE = 32， KEY_D = 68;
 var INTERVAL = 600;
 var shapes = [];
 
@@ -338,7 +338,7 @@ function registerKeydownEvent(){
 				case KEY_RIGHT:
 					board.move(1, 0);
 					break;
-				case KEY_SPACE:
+				case KEY_D:
 				{
 					while (board.canDrop())
 					board.drop();

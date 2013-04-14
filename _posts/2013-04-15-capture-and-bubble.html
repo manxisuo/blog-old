@@ -8,6 +8,7 @@ title: 捕获和冒泡
 <p>如下，有三层DIV结构，div1 > div2 >div3</p>
 <img src="http://is.gd/gp_manxisuo_002" title="gp_manxisuo_002" />
 <p>在每个div上都绑定两个事件监听器：</p>
+<pre>
 <div class="code code-js">
 div1.addEventListener('click', function(){
     console.log('div1: capture');
@@ -33,6 +34,7 @@ div3.addEventListener('click', function(){
     console.log('div3: bubble');
 }, false);
 </div>
+</pre>
 <pre>
 <p>
 在div3上点击时输出：
@@ -57,11 +59,13 @@ div3.addEventListener('click', function(){
 <h2>阻止冒泡的方法</h2>
 <p>使用事件对象的 Event.prototype.stopPropagation方法</p>
 <p>继续上面的例子，执行下面脚本</p>
+<pre>
 <div class="code code-js">
 div3.addEventListener('click', function(e){  
     e.stopPropagation();  
 }, false); 
 </div>
+</pre>
 <pre>
 <p>
 然后再次点击div3，输出：

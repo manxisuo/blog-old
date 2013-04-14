@@ -66,3 +66,16 @@ p {margin: 1em 0;}
     float: left;
     margin-right: 3em;
 }
+
+.code {
+
+}
+
+.code .string {
+    color: blue;
+}
+
+.code .keyword {
+    color: #7f0055;
+    font-weight: bold;
+}

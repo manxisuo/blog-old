@@ -68,7 +68,7 @@ var board = {
 					width: width * length,
 					height: height * length,
 					border: '1px solid black',
-					position: 'absolute',
+					position: 'relative',
 					left: 100,
 					top: 100
 				}).show();

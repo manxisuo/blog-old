@@ -50,13 +50,8 @@ p {margin: 1em 0;}
 
 }
 
-.post p{
-    text-indent: 2em;
-}
-
 .meta {
     color: #aaa;
-    text-indent: 0;
 }
 
 .footer {

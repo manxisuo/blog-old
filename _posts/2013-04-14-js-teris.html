@@ -3,8 +3,8 @@ layout: post
 title: 俄罗斯方块
 ---
 <script type="text/javascript" src="{{ site.baseurl }}/js/2013-04-14-js-teris.js"></script>
-<h2>{{ page.title }}</h2>
-<hr />
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date_to_string }}</p>
 <p>用Javascript写的俄罗斯方块，是为了练习JS的面向对象编程。有一些bug，懒得修复了:-)</p>
 <p>说明 >></p>
 <p>left: 左移; right: 右移; down: 加速下落; up: 变形; space: 直接落底</p>
@@ -14,5 +14,3 @@ title: 俄罗斯方块
     <label for="score">Score:</label><input type="text" readonly="readonly" value="0" id="score" />
     <div id="stage" style="height: 550px;"></div>
 </div>
-
-<p>{{ page.date | date_to_string }}</p>

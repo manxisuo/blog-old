@@ -22,6 +22,15 @@ p {margin: 1em 0;}
     margin-bottom: 2em;
 }
 
+.title a:hover {
+    color: black;
+}
+
+.title a {
+    color: #a00;
+    text-decoration: none;
+}
+
 .home {
 
 }

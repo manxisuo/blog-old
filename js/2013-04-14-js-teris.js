@@ -39,11 +39,18 @@ shapes.push({
 	color: 'purple'
 });
 
-// S
+// Z
 shapes.push({
 	points: [{x:0, y: 0}, {x: -1, y: 0}, {x: 0, y: 1}, {x: 1, y: 1},],
 	adjust:  {x: 5, y: -2},
 	color: 'maroon'
+});
+
+// S
+shapes.push({
+	points: [{x:0, y: 0}, {x: 1, y: 0}, {x: 0, y: 1}, {x: -1, y: 1},],
+	adjust:  {x: 5, y: -2},
+	color: 'aqua'
 });
 
 var	width = 10, height = 15, length = 35;

@@ -4,11 +4,11 @@ body {
 }
 
 h1 {font-size: 1.2em;}
-h2 {font-size: 1.2em;}
+h2 {font-size: 1.1em;}
 p {margin: 1em 0;}
 
 .site {
-    font-size: 110%;
+    font-size: 105%;
     text-align: justify;
     line-height: 1.5em;
     width: 42em;

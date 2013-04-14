@@ -351,7 +351,7 @@ function registerKeydownEvent(){
 		}
 	}).focus();
     
-    $('.board').bind('dbclick', function(e){
+    $('.board').bind('dblclick', function(e){
         e.preventDefault();
     });
 }

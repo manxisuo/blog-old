@@ -1,0 +1,15 @@
+---
+layout: post
+title: 俄罗斯方块
+---
+<script type="text/javascript" src="2013-04-14-js-teris.js"></script>
+<h2>{{ page.title }}</h2>
+<hr />
+<p>用Javascript写的俄罗斯方块，是为了练习JS的面向对象编程。有一些bug，不想修复了。</p>
+<div>
+    <button id="pause" disabled="disabled" style="width: 100px">Pause</button>
+    <button id="start" style="width: 100px">Start</button>
+    <label for="score">Score:</label><input type="text" readonly="readonly" value="0" id="score" />
+</div>
+
+<p>{{ page.date | date_to_string }}</p>

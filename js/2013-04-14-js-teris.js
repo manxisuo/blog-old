@@ -63,7 +63,7 @@ var board = {
 		}
 		
 		$('.board').remove();
-		var container = $('<div/>').addClass('board').appendTo($('body'));
+		var container = $('<div/>').addClass('board').appendTo($('#stage'));
 		container.css({
 					width: width * length,
 					height: height * length,

@@ -70,7 +70,7 @@ var board = {
 					border: '1px solid black',
 					position: 'relative',
 					left: 100,
-					top: 100
+					top: 20
 				}).show();
 
 		for(var i = 0; i < height; i++) {

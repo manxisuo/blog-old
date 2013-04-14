@@ -350,6 +350,10 @@ function registerKeydownEvent(){
 			}
 		}
 	}).focus();
+    
+    $('.board').bind('dbclick', function(e){
+        e.preventDefault();
+    });
 }
 
 $(function(){

@@ -1,6 +1,7 @@
 body {
-	background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     text-align: center;
+    font-family: "Microsoft YaHei";
 }
 
 h1 {font-size: 1.2em;}
@@ -68,7 +69,8 @@ p {margin: 1em 0;}
 }
 
 .code {
-
+    border: 1px solid #D1D7DC;
+    background-color: #FAFAFA;
 }
 
 .code .string {

@@ -70,7 +70,8 @@ p {margin: 1em 0;}
 
 .code {
     border: 1px solid #D1D7DC;
-    background-color: #FAFAFA;
+    background-color: #F1F1F1;
+    padding-left: 10px;
 }
 
 .code .string {

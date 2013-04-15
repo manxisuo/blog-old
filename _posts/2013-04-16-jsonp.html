@@ -9,20 +9,18 @@ title: 一个JSONP的例子
 <p class="meta">{{ page.date | date_to_string }}</p>
 <div class="code code-js" id="code1">
 <pre>
-    with(window){
-     function addScriptTag(src){
+     window.addScriptTag = function(src){
          var script = document.createElement('script');
          script.setAttribute("type","text/javascript");
          script.src = src;
          document.body.appendChild(script);
      }
 
-     function result(data) {
+     window.result = function(data) {
          alert(data.responseData.results[0].unescapedUrl);
      }
      
     addScriptTag("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=apple&callback=result");
-}
 </pre>
 </div>
 <p>实例：</p>

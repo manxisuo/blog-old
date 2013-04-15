@@ -6,7 +6,8 @@ title: 一个JSONP的例子
 <p class="meta">{{ page.date | date_to_string }}</p>
 <div class="code code-js" id="code1">
 <pre>
-     function addScriptTag(src){
+(function(window){
+         function addScriptTag(src){
          var script = document.createElement('script');
          script.setAttribute("type","text/javascript");
          script.src = src;
@@ -17,8 +18,10 @@ title: 一个JSONP的例子
          alert(data.responseData.results[0].unescapedUrl);
      }
      
-    addScriptTag("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=apple&callback=result");
+     addScriptTag("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=apple&callback=result");
+     
+})(window);
 </pre>
 </div>
 <p>实例：</p>
-<button onclick="eval($('#code1').text())">Click</button>
+<button onclick="func()">Click</button>

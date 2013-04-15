@@ -82,3 +82,7 @@ p {margin: 1em 0;}
     color: #7f0055;
     font-weight: bold;
 }
+
+pre {
+    word-wrap: break-word;
+}

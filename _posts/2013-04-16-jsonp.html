@@ -1,0 +1,25 @@
+---
+layout: post
+title: 一个JSONP的例子
+---
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="code code-js">
+<pre>
+     function addScriptTag(src){
+         var script = document.createElement('script');
+         script.setAttribute("type","text/javascript");
+         script.src = src;
+         document.body.appendChild(script);
+     }
+     
+     window.onload = function(){
+         addScriptTag("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=apple&callback=result");
+         
+     }
+
+     function result(data) {
+         alert(data.responseData.results[0].unescapedUrl);
+     }
+</pre>
+</div>

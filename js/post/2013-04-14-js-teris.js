@@ -362,7 +362,6 @@ function registerKeydownEvent(){
         var target = $(e.target);
         var x = target.attr('x');
         var y = target.attr('y');
-        console.log(x + "|" + y);
 
         if (y >= 0 && y <= 4) {
             if (x >= 2 && x <= 7) {

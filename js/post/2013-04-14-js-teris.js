@@ -88,7 +88,7 @@ var board = {
 					border: '1px solid black',
 					'background-color': 'white',
 					float: 'left'
-				}).attr('id', 'span_' +j + '_' + i).show());
+				}).attr('id', 'span_' +j + '_' + i).attr('x', j).attr('y', i).show());
 			}
 		}
 		
@@ -353,10 +353,39 @@ function registerKeydownEvent(){
 					break;
 				}
 				default:
-					console.log(e.which);
+					//console.log(e.which);
 			}
 		}
 	});
+	
+    $('.board div').bind('click', function(e){
+        var target = $(e.target);
+        var x = target.attr('x');
+        var y = target.attr('y');
+        console.log(x + "|" + y);
+
+        if (y >= 0 && y <= 4) {
+            if (x >= 2 && x <= 7) {
+               board.antiClockWise();
+            }
+        }
+        else if (y >= 5 && y <= 9) {
+            if (x >= 0 && x <= 2) {
+                board.move(-1, 0);
+            }
+            else if (x >= 3 && x <= 6) {
+                while (board.canDrop())board.drop();
+            }
+            else if (x >= 7 && x <= 9) {
+                board.move(1, 0);
+            }
+        }
+        else if (y >= 10 && y <= 14) {
+            if (x >= 2 && x <= 7) {
+               board.move(0, 1);
+            }
+        }
+    });
     
     $('.board').bind('dblclick', function(e){
         e.preventDefault();
@@ -387,6 +416,8 @@ $(function(){
 			stopGame();
 		}
 	});
+	
+	
 	
 	board.init();
 });
